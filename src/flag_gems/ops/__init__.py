@@ -48,7 +48,7 @@ from .div import (
     true_divide,
     true_divide_,
 )
-from .dropout import native_dropout
+from .dropout import dropout, dropout_backward
 from .elu import elu
 from .embedding import embedding
 from .eq import eq, eq_scalar
@@ -222,7 +222,8 @@ __all__ = [
     "zeros",
     "ones",
     "full",
-    "native_dropout",
+    "dropout",
+    "dropout_backward",
     "erf",
     "erf_",
     "embedding",
