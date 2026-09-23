@@ -642,6 +642,11 @@ from flag_gems.ops.isnan import isnan
 from flag_gems.ops.isneginf import isneginf, isneginf_out
 from flag_gems.ops.isposinf import isposinf
 from flag_gems.ops.isreal import isreal
+from flag_gems.ops.kaiser_window import (
+    kaiser_window,
+    kaiser_window_beta,
+    kaiser_window_periodic,
+)
 from flag_gems.ops.kron import kron
 from flag_gems.ops.kthvalue import kthvalue
 from flag_gems.ops.layernorm import layer_norm, layer_norm_backward
@@ -1912,6 +1917,9 @@ __all__ = [
     "isneginf_out",
     "isposinf",
     "isreal",
+    "kaiser_window",
+    "kaiser_window_beta",
+    "kaiser_window_periodic",
     "kron",
     "kthvalue",
     "layer_norm",
