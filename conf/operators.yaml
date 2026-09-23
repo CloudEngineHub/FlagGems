@@ -53,6 +53,34 @@ ops:
   - Reduction
   stages:
   - alpha: '5.5'
+- id: _conj_physical
+  description: 'Computes the element-wise conjugate of the given `input` tensor as
+    a physical (non-view) tensor. For non-complex dtypes the input is returned unchanged.
+
+    '
+  for:
+  - _conj_physical
+  labels:
+  - aten
+  - KernelGen
+  kind:
+  - Math
+  stages:
+  - alpha: '5.5'
+- id: _conj_physical_out
+  description: 'A variant of `_conj_physical()` that writes the result into the `out`
+    tensor.
+
+    '
+  for:
+  - _conj_physical.out
+  labels:
+  - aten
+  - KernelGen
+  kind:
+  - Math
+  stages:
+  - alpha: '5.5'
 - id: _ctc_loss
   description: 'Computes the CTC loss and the alpha lattice used by its backward pass.
 
