@@ -148,6 +148,7 @@ _FULL_CONFIG = (
     ("_ctc_loss.out", _ctc_loss_out),
     ("_ctc_loss.Tensor", _ctc_loss),
     ("_ctc_loss.Tensor_out", _ctc_loss_out),
+    ("_cudnn_attention_backward", cudnn_attention_backward),
     ("_cudnn_attention_forward", cudnn_attention_forward),
     ("_cudnn_rnn", cudnn_rnn),
     ("_cudnn_rnn_backward", cudnn_rnn_backward),
