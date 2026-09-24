@@ -922,6 +922,7 @@ _FULL_CONFIG = (
     ("kaiser_window.periodic", kaiser_window_periodic),
     ("kron", kron),
     ("kthvalue", kthvalue),
+    ("l1_loss", l1_loss),
     ("lcm", lcm),
     ("lcm_", lcm_),
     ("ldexp.out", ldexp_out),

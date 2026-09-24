@@ -655,6 +655,7 @@ from flag_gems.ops.kaiser_window import (
 )
 from flag_gems.ops.kron import kron
 from flag_gems.ops.kthvalue import kthvalue
+from flag_gems.ops.l1_loss import l1_loss
 from flag_gems.ops.layernorm import layer_norm, layer_norm_backward
 from flag_gems.ops.lcm import lcm, lcm_
 from flag_gems.ops.ldexp import ldexp, ldexp_out
@@ -1940,6 +1941,7 @@ __all__ = [
     "kaiser_window_periodic",
     "kron",
     "kthvalue",
+    "l1_loss",
     "layer_norm",
     "layer_norm_backward",
     "lcm",

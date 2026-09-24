@@ -8265,6 +8265,21 @@ ops:
   - Tensor
   stages:
   - alpha: '5.4'
+- id: l1_loss
+  description: |
+    Compute the L1 loss between input and target tensors, i.e. the element-wise
+    absolute difference, with optional none/mean/sum reduction.
+  for:
+  - l1_loss
+  labels:
+  - aten
+  - pointwise
+  - nn.functional
+  - KernelGen
+  kind:
+  - NeuralNetwork
+  stages:
+  - alpha: '5.5.0'
 - id: layer_norm
   description: An internal IR for applying Layer Normalization for last certain number
     of dimensions.
