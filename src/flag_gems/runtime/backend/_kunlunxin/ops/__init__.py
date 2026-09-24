@@ -233,7 +233,7 @@ from .empty import empty  # noqa: F401
 from .empty_permuted import empty_permuted  # noqa: F401
 from .eq import eq, eq_, eq_scalar, eq_scalar_
 from .erf import erf, erf_, special_erf
-from .erfc import erfc, erfc_  # noqa: F401
+from .erfc import erfc, erfc_, special_erfc  # noqa: F401
 from .erfinv import erfinv
 from .erfinv_ import erfinv_  # noqa: F401
 from .exp import exp, exp_, exp_out
@@ -584,7 +584,6 @@ from .special_chebyshev_polynomial_w import (
     special_chebyshev_polynomial_w_out,
 )
 from .special_digamma import special_digamma
-from .special_erfc import special_erfc
 from .special_erfcx import special_erfcx
 from .special_erfinv import special_erfinv, special_erfinv_, special_erfinv_out
 from .special_exp2 import special_exp2
