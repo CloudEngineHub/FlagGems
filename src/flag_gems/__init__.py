@@ -906,6 +906,10 @@ _FULL_CONFIG = (
     ("index_reduce_", index_reduce_),
     ("index_select", index_select),
     ("index_select_backward", index_select_backward),
+    (
+        "infinitely_differentiable_gelu_backward",
+        infinitely_differentiable_gelu_backward,
+    ),
     ("inner", inner),
     ("inverse", inverse),
     ("is_nonzero", is_nonzero),
