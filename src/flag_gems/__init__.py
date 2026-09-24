@@ -1711,6 +1711,7 @@ for _alias, _target in (
     ("softmax_backward", "softmax_backward_out"),
     ("log_softmax", "log_softmax_out"),
     ("log_softmax_backward", "log_softmax_backward_out"),
+    ("rrelu_", rrelu_),
 ):
     if _target in FULL_CONFIG_BY_FUNC:
         FULL_CONFIG_BY_FUNC.setdefault(_alias, []).extend(FULL_CONFIG_BY_FUNC[_target])

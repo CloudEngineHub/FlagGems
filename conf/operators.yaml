@@ -13887,6 +13887,23 @@ ops:
   - Tensor
   stages:
   - alpha: '5.4'
+- id: rrelu_
+  description: |
+    In-place Randomized Leaky ReLU (RReLU). Applies RReLU in place: positive
+    inputs are passed through unchanged, while negative inputs are multiplied
+    by a slope. During training the slope is sampled uniformly from
+    [lower, upper] per element, and at evaluation time the constant slope
+    (lower + upper) / 2 is used.
+  for:
+  - rrelu_
+  labels:
+  - aten
+  - KernelGen
+  - pointwise
+  kind:
+  - NeuralNetwork
+  stages:
+  - alpha: '5.5.0'
 - id: rrelu_with_noise
   description: 'Triton kernel implementation for rrelu_with_noise
     '
