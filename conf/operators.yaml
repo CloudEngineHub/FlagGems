@@ -14333,6 +14333,22 @@ ops:
   - NeuralNetwork
   stages:
   - beta: '5.4'
+- id: scaled_grouped_mm_v2
+  description: |
+    Recipe-driven grouped scaled matrix multiply: a stack of per-group GEMMs
+    whose operands carry per-row (RowWise) or per-tensor (TensorWise) decoding
+    scales, with the jagged dimension described by an int32 `offs` tensor.
+    Backs quantized Mixture-of-Experts layers.
+  for:
+  - _scaled_grouped_mm_v2
+  labels:
+  - aten
+  - KernelGen
+  - MoE
+  kind:
+  - NeuralNetwork
+  stages:
+  - alpha: '5.5.0'
 - id: scaled_mm
   description: 'Performs a scaled matrix multiplication. The result of `self @ mat2`
     is
