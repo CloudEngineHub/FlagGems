@@ -13255,6 +13255,22 @@ ops:
   stages:
   - beta: '5.0'
   - stable: '5.3'
+- id: relu6_
+  description: |
+    In-place version of `relu6()`. Applies the element-wise function
+    `f(x)=min(max(0,x),6)` to the input tensor and stores the result back
+    into it.
+  for:
+  - relu6_
+  labels:
+  - aten
+  - pointwise
+  - Activation
+  - KernelGen
+  kind:
+  - NeuralNetwork
+  stages:
+  - alpha: '5.5.0'
 - id: relu_
   description: This is the in-place version of `relu()`.
   for:
