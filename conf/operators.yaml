@@ -12439,6 +12439,21 @@ ops:
   - Tensor
   stages:
   - alpha: '5.4'
+- id: philox_normal_
+  description: |
+    Fills the tensor in place with samples from a normal distribution with
+    the given mean and std, drawn from a stateless Philox RNG stream
+    identified by the (seed, offset) pair in `key`.
+  for:
+  - _philox_normal_
+  labels:
+  - aten
+  - KernelGen
+  - pointwise
+  kind:
+  - Distribution
+  stages:
+  - alpha: '5.5.0'
 - id: pin_memory
   description: 'Public entry that pins a strided CPU tensor into page-locked host
     memory; delegates to _pin_memory.

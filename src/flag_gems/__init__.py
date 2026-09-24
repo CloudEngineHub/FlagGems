@@ -1707,6 +1707,7 @@ for _item in _FULL_CONFIG:
 
 # Friendly names for only_enable(include=[...]) when the registered impl is *.out
 for _alias, _target in (
+    ("_philox_normal_", _philox_normal_),
     ("softmax", "softmax_out"),
     ("softmax_backward", "softmax_backward_out"),
     ("log_softmax", "log_softmax_out"),
