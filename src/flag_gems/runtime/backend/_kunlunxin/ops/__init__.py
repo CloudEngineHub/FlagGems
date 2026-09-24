@@ -204,6 +204,7 @@ from .diag import diag
 from .diag_embed import diag_embed
 from .diagonal import diagonal_backward
 from .diagonal_copy import diagonal_copy
+from .diagonal_scatter import diagonal_scatter
 from .diff import diff
 from .digamma import digamma
 from .digamma_ import digamma_
@@ -895,6 +896,7 @@ __all__ = [
     "diag_embed",
     "diagonal_backward",
     "diagonal_copy",
+    "diagonal_scatter",
     "diff",
     "digamma",
     "digamma_",
