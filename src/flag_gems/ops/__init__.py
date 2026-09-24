@@ -112,6 +112,7 @@ from flag_gems.ops._linalg_eigvals import _linalg_eigvals
 from flag_gems.ops._linalg_slogdet import _linalg_slogdet
 from flag_gems.ops._linalg_svd import _linalg_svd
 from flag_gems.ops._list_to_tensor import _list_to_tensor
+from flag_gems.ops._logcumsumexp import _logcumsumexp, _logcumsumexp_out
 from flag_gems.ops._lu_with_info import _lu_with_info
 from flag_gems.ops._make_dep_token import _make_dep_token
 from flag_gems.ops._masked_scale import _masked_scale
@@ -1374,6 +1375,8 @@ __all__ = [
     "_linalg_slogdet",
     "_linalg_svd",
     "_list_to_tensor",
+    "_logcumsumexp",
+    "_logcumsumexp_out",
     "_lu_with_info",
     "_make_dep_token",
     "_masked_scale",
