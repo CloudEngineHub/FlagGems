@@ -149,6 +149,7 @@ from flag_gems.ops._nested_view_from_buffer_copy import _nested_view_from_buffer
 from flag_gems.ops._nested_view_from_jagged import _nested_view_from_jagged
 from flag_gems.ops._nested_view_from_jagged_copy import _nested_view_from_jagged_copy
 from flag_gems.ops._pad_circular import _pad_circular
+from flag_gems.ops._pad_enum import _pad_enum
 from flag_gems.ops._pad_packed_sequence import _pad_packed_sequence
 from flag_gems.ops._pdist_backward import _pdist_backward
 from flag_gems.ops._pdist_forward import _pdist_forward
@@ -1417,6 +1418,7 @@ __all__ = [
     "_nested_view_from_jagged",
     "_nested_view_from_jagged_copy",
     "_pad_circular",
+    "_pad_enum",
     "_pad_packed_sequence",
     "_padded_dense_to_jagged_forward",
     "_pdist_backward",
