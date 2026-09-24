@@ -1232,6 +1232,8 @@ _FULL_CONFIG = (
     ("prelu", prelu),
     ("prod", prod),
     ("prod.dim_int", prod_dim),
+    ("put", put),
+    ("put.out", put_out),
     ("quantile", quantile),
     ("quantize_per_tensor", quantize_per_tensor),
     ("quantize_per_tensor.out", quantize_per_tensor_out),
