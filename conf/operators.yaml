@@ -6999,6 +6999,21 @@ ops:
   - NeuralNetwork
   stages:
   - alpha: '5.4'
+- id: hardshrink_backward
+  description: |
+    Computes the gradient of the Hard Shrink activation function with respect to its input
+    during backpropagation. The gradient is passed through where the input magnitude is
+    strictly greater than the threshold lambd, and is zero elsewhere.
+  for:
+  - hardshrink_backward
+  labels:
+  - aten
+  - pointwise
+  - KernelGen
+  kind:
+  - NeuralNetwork
+  stages:
+  - alpha: '5.5.0'
 - id: hardshrink_out
   description: 'Out-variant of hardshrink. Writes the element-wise result into the
     `out` tensor.

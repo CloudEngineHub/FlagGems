@@ -850,6 +850,8 @@ _FULL_CONFIG = (
     ("hamming_window.periodic_alpha_beta", hamming_window_periodic_alpha_beta),
     ("hardshrink", hardshrink),
     ("hardshrink.out", hardshrink_out),
+    ("hardshrink_backward", hardshrink_backward),
+    ("hardshrink_backward.grad_input", hardshrink_backward_grad_input),
     ("hardsigmoid", hardsigmoid),
     ("hardsigmoid.out", hardsigmoid_out),
     ("hardsigmoid_", hardsigmoid_),

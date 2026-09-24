@@ -598,6 +598,10 @@ from flag_gems.ops.hamming_window import (
     hamming_window_periodic_alpha_beta,
 )
 from flag_gems.ops.hardshrink import hardshrink, hardshrink_out
+from flag_gems.ops.hardshrink_backward import (
+    hardshrink_backward,
+    hardshrink_backward_grad_input,
+)
 from flag_gems.ops.hardsigmoid import hardsigmoid, hardsigmoid_out
 from flag_gems.ops.hardsigmoid_ import hardsigmoid_
 from flag_gems.ops.hardsigmoid_backward import hardsigmoid_backward
@@ -1870,6 +1874,8 @@ __all__ = [
     "hamming_window_periodic_alpha",
     "hamming_window_periodic_alpha_beta",
     "hardshrink",
+    "hardshrink_backward",
+    "hardshrink_backward_grad_input",
     "hardshrink_out",
     "hardsigmoid",
     "hardsigmoid_",
