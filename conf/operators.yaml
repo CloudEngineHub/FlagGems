@@ -15308,6 +15308,22 @@ ops:
   stages:
   - beta: '5.0'
   - stable: '5.3'
+- id: softshrink_backward
+  description: |
+    Computes the gradient of the `softshrink` activation. Gradients flow through
+    only where the magnitude of the original input exceeds `lambd`; elsewhere
+    the gradient is zero.
+  for:
+  - softshrink_backward
+  labels:
+  - aten
+  - nn.functional
+  - Activation
+  - KernelGen
+  kind:
+  - NeuralNetwork
+  stages:
+  - alpha: '5.5.0'
 - id: softshrink_out
   description: 'This is a variant of `softshrink` that supports an output tensor.
 
