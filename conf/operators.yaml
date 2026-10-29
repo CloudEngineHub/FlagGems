@@ -21103,6 +21103,20 @@ primal value saved by `fw_primal` into the caller-supplied `out` buffer.
   - BLAS
   stages:
   - alpha: '5.5'
+- id: thnn_conv2d
+  description: 'Applies a 2D convolution over an NCHW input using the legacy THNN
+    entry point, with the given kernel weights, optional bias, stride and padding.
+
+    '
+  for:
+  - thnn_conv2d
+  labels:
+  - aten
+  - KernelGen
+  kind:
+  - NeuralNetwork
+  stages:
+  - alpha: '5.5'
 - id: thnn_differentiable_gru_cell_backward
   description: Computes differentiable gradients for a fused GRU cell.
   for:
