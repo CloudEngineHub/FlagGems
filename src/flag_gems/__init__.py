@@ -716,6 +716,7 @@ _FULL_CONFIG = (
     ("addr_", addr_),
     ("adjoint", adjoint),
     ("affine_grid_generator", affine_grid_generator),
+    ("affine_grid_generator_backward", affine_grid_generator_backward),
     ("alias", alias),
     ("alias_copy", alias_copy),
     ("alias_copy.out", alias_copy_out),
