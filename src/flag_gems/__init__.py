@@ -1508,6 +1508,8 @@ _FULL_CONFIG = (
     ("mode", mode),
     ("moveaxis.int", moveaxis),
     ("moveaxis.intlist", moveaxis),
+    ("movedim.int", movedim),
+    ("movedim.intlist", movedim),
     ("mse_loss", mse_loss),
     ("mse_loss_backward", mse_loss_backward),
     ("msort", msort),
