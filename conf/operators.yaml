@@ -196,6 +196,18 @@ ops:
   - NeuralNetwork
   stages:
   - alpha: '5.5'
+- id: _indices
+  description: Returns the coordinate (indices) tensor of a sparse COO tensor as a
+    zero-copy alias of the internal indices storage, shaped (sparse_dim, nnz).
+  for:
+  - _indices
+  labels:
+  - aten
+  - KernelGen
+  kind:
+  - Sparse
+  stages:
+  - alpha: '5.5'
 - id: _indices_copy
   description: 'Returns a fresh non-aliasing copy of the coordinate (indices) tensor
     of a sparse COO tensor, shaped (sparse_dim, nnz).
