@@ -87,6 +87,7 @@ from ._foreach_copy import _foreach_copy  # noqa: F401
 from ._foreach_copy_ import _foreach_copy_
 from ._foreach_erfc import _foreach_erfc
 from ._foreach_erfc_ import _foreach_erfc_
+from ._foreach_expm1 import _foreach_expm1, _foreach_expm1_  # noqa: F401
 from ._foreach_floor import _foreach_floor
 from ._foreach_floor_ import _foreach_floor_
 from ._foreach_log import _foreach_log, _foreach_log_  # noqa: F401
@@ -122,6 +123,7 @@ from ._foreach_sqrt import _foreach_sqrt
 from ._foreach_sub_list_ import _foreach_sub__List
 from ._foreach_tan import _foreach_tan  # noqa: F401
 from ._foreach_tan_ import _foreach_tan_  # noqa: F401
+from ._foreach_tanh_ import _foreach_tanh_  # noqa: F401
 from ._foreach_ternary_scalar import (  # noqa: F401
     _foreach_addcmul_Scalar,
     _foreach_lerp__Scalar,
@@ -143,7 +145,6 @@ from ._foreach_unary import (  # noqa: F401
     _foreach_sin_,
     _foreach_sqrt_,
     _foreach_tanh,
-    _foreach_tanh_,
 )
 from ._foreach_zero import _foreach_zero, _foreach_zero_  # noqa: F401
 from ._functional_sym_constrain_range import _functional_sym_constrain_range
@@ -955,6 +956,8 @@ __all__ = [
     "_foreach_erfc_",
     "_foreach_exp",
     "_foreach_exp_",
+    "_foreach_expm1",
+    "_foreach_expm1_",
     "_foreach_floor",
     "_foreach_floor_",
     "_foreach_lerp__Scalar",
@@ -1002,6 +1005,7 @@ __all__ = [
     "_foreach_sub_ScalarList",
     "_foreach_tan",
     "_foreach_tan_",
+    "_foreach_tanh_",
     "_foreach_zero",
     "_foreach_zero_",
     "_functional_assert_async",
